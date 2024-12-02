@@ -72,7 +72,7 @@
     --xy-padding:14px;
     --transition-ms:0.3s;
 
-    max-width: 500px;
+    max-width: 420px;
     font-size: 11pt;
     font-family: "Uchen", serif;
     font-weight: 400;
@@ -199,6 +199,7 @@
    }
   
    .cardback{
+      display:none;
       position: absolute;
       width:220px;
       margin-left: -2%;
@@ -207,6 +208,7 @@
    }
    
    .cardfront{
+      display:none;
       position: absolute;
       width:220px;
       top: 23%;
@@ -216,13 +218,19 @@
    }
 
    #tessbox{
-      top: 12%;
+      position: relative;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      top: 15%;
       left: 2%;
       max-width: 100%;
       transform: rotate(0deg);
    }
    #janesbox{
-      top: 18%;
+      position: relative;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      top: 25%;
        left: 2%;
        max-width: 100%;
        background-color: #66997A;
@@ -231,7 +239,10 @@
     }
 
     #sadesbox{
-      top: 38%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      position: relative;
+      top: 90%;
       max-width: 100%;
       left: 2%; 
       background-color: #66997A;
@@ -239,6 +250,9 @@
   
    }
    #johnsbox{
+      margin-top: 5%;
+      margin-bottom: 5%;
+      position: relative;
       top: 54%;
      left: 2%;
       max-width: 100%;
@@ -246,7 +260,8 @@
   
    }
    #marksbox{
-      top: 66%;
+      position: relative;
+      top: 70%;
      left: 2%;
       max-width: 100%;
       transform: rotate(0deg);
@@ -254,13 +269,15 @@
    }
 
    #alexsbox{
-      top: 60%;
+      position: relative;
+      top: 80%;
      left: 2%;
       max-width: 100%;
       transform: rotate(0deg);
   
    }
    .matchbox{
+      display:none;
       position: absolute;
       left: 0.5%;
       top: 44%;
@@ -268,6 +285,7 @@
       z-index: -1;
    }
    .openmatchbox{
+      display:none;
       position: absolute;
       left: 10%;
       top: 28%;
