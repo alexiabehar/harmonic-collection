@@ -1,0 +1,289 @@
+*{
+    box-sizing: border-box;
+ }
+ 
+ body {
+    background-color: #af3434;
+    background-size: cover;
+
+ }
+
+ .imgtitleofplace{
+    position: relative;
+    width: 600px;
+    height: auto;
+    margin-top: 0%;
+    margin-left: 0%;
+ }
+
+ 
+ .imgtitleofplace:hover{
+   filter: invert(23%) sepia(57%) saturate(4010%) hue-rotate(351deg) brightness(86%) contrast(92%);
+
+}
+ 
+ .arrow{
+    position: fixed; /* Change to fixed positioning */
+    top: 1%; /* Adjust as needed for spacing from the top */
+    right: 0%; /* Adjust as needed for spacing from the right */
+    width: 150px; /* Set the width as needed */
+    height: auto;
+    transition: transform 300ms ease-in-out;
+ }
+
+ .arrow:hover{
+    transform: translateX(-20px);
+    filter: invert(23%) sepia(57%) saturate(4010%) hue-rotate(351deg) brightness(86%) contrast(92%);
+ }
+ 
+ .cardback{
+    position: absolute;
+    width:340px;
+    margin-left: 35%;
+    margin-top: 1%;
+    z-index: -1;
+ }
+
+ .openmatchbox{
+   position: absolute;
+   width:300px;
+   margin-left: 35%;
+   margin-top: 35%;
+   z-index: -1;
+}
+ .cardfront{
+    position: absolute;
+    width: 340px;
+    right: 7%;
+    top: 60%;
+    z-index: -1;
+
+ }
+
+ .matchbox{
+    position: absolute;
+    left: 5%;
+    top: 45%;
+    width: 260px;
+    z-index: -1;
+ }
+
+ .expandable{
+    --xy-padding:14px;
+    --transition-ms:0.3s;
+
+    max-width: 500px;
+    font-size: 11pt;
+    font-family: "Uchen", serif;
+    font-weight: 400;
+    font-style: normal;
+/*     background-color: #f0eeb6;
+ */    overflow: hidden;
+    height: fit-content; /* Set a minimum height */
+    display: flex;
+/*     padding-bottom: 5pt;
+ */    flex-direction: column;
+   
+}
+
+.expandable--open .expandable__content-wrapper{
+    grid-template-rows: 1fr;
+    margin-bottom: 10px;
+
+}
+
+.expandable--open .expandable__icon{
+    transform: rotate(-90deg);
+}
+
+.expandable__title-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--xy-padding);
+    user-select: none;
+/*     background-color: #f0eeb6; */
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.expandable__title{
+    font-weight: bold;
+}
+
+.expandable__icon{
+    transition: transform var(--transition-ms);
+}
+
+.expandable__content{
+    padding: 0 var(--xy-padding);
+    line-height: 1.4;
+    font-size: 13px;
+    border-top: none;
+    overflow: hidden;
+
+}
+
+.expandable__content-wrapper{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows var(--transition-ms) ease-out;
+
+}
+.card{
+   position:absolute;
+   z-index:0;
+}
+
+#tessbox{
+    top: 27%;
+    left: 2%;
+    max-width: 30%;
+    background: #dc6c6c;
+    transform: rotate(-2deg);
+
+}
+
+#sadesbox{
+    top: 60%;
+    max-width: 20%;
+    left: 30%; 
+    background-color: #66997A;
+    transform: rotate(-4deg);
+
+ }
+
+ #janesbox{
+   top: 30%;
+    left: 64%;
+    max-width: 30%;
+    background-color: #66997A;
+    transform: rotate(-4deg);
+
+ }
+
+ #marksbox{
+    top: 98%;
+    left: 65%;
+    max-width: 30%;
+    background-color: #dc6c6c;
+    transform: rotate(3deg);
+
+ }
+
+ #johnsbox{
+    top: 83%;
+   left: 5%;
+    max-width: 26%;
+    background-color: #dc6c6c;
+    transform: rotate(2deg);
+
+ }
+
+ #alexsbox{
+    top: 125%;
+    left: 40%;
+    max-width: 26%;
+    background-color: #66997A;
+    transform: rotate(-2deg);
+
+ }
+ 
+
+ @media screen and (max-width: 440px){
+   .imgtitleofplace{
+      width: 340px;
+   }
+   .arrow{
+      width: 70px;
+   }
+  
+   .cardback{
+      position: absolute;
+      width:220px;
+      margin-left: -2%;
+      margin-top: 29%;
+      z-index: -1;
+   }
+   
+   .cardfront{
+      position: absolute;
+      width:220px;
+      top: 23%;
+      left: 50%;
+      z-index: -1;
+      transform: rotate(1.7deg);
+   }
+
+   #tessbox{
+      top: 12%;
+      left: 2%;
+      max-width: 100%;
+      transform: rotate(0deg);
+   }
+   #janesbox{
+      top: 18%;
+       left: 2%;
+       max-width: 100%;
+       background-color: #66997A;
+       transform: rotate(0deg);
+   
+    }
+
+    #sadesbox{
+      top: 38%;
+      max-width: 100%;
+      left: 2%; 
+      background-color: #66997A;
+      transform: rotate(0deg);
+  
+   }
+   #johnsbox{
+      top: 54%;
+     left: 2%;
+      max-width: 100%;
+      transform: rotate(0deg);
+  
+   }
+   #marksbox{
+      top: 66%;
+     left: 2%;
+      max-width: 100%;
+      transform: rotate(0deg);
+  
+   }
+
+   #alexsbox{
+      top: 60%;
+     left: 2%;
+      max-width: 100%;
+      transform: rotate(0deg);
+  
+   }
+   .matchbox{
+      position: absolute;
+      left: 0.5%;
+      top: 44%;
+      width: 200px;
+      z-index: -1;
+   }
+   .openmatchbox{
+      position: absolute;
+      left: 10%;
+      top: 28%;
+      width: 240px;
+      z-index: -1;
+      transform: rotate(-3deg);
+
+   }
+
+   
+   .expandable__title-bar{
+      font-size: 10px;
+  }
+  .expandable__content{
+   font-size: 9px;
+  }
+
+  
+ }
