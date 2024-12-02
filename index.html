@@ -7,21 +7,128 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Jacquarda+Bastarda+9+Charted&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Uchen&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js" integrity="sha256-9zljDKpE/mQxmaR4V2cGVaQ7arF3CcXxarvgr7Sj8Uc=" crossorigin="anonymous"></script>
+    
+        
     </head>
     <body>
-        
-        <div><img src="title.png" class="imgtitleofplace"></div>
-        <a href="arthur-sons/index.html">
-            <div><img src="Arthur&Sons copy.png" class="arthursons-card"></div>
+      
+        <div><img src="titleofretaurant.png" class="imgtitleofplace"></div>
+        <a href="../index.html">
+            <div><img src="arrow.png" class="arrow"></div>
         </a>
-        <div><img src="Cafe Cluny copy.png" class="cafecluny-card"></div>
-        <div><img src="Felice copy.png" class="felice-card"></div>
-        <div><img src="Momofuku copy.png" class="momofuku-card"></div>
-
+        
+        <div><img src="card back.png" class="cardback" id="cardback"></div>
+        <div><img src="card.png" class="cardfront" id="cardfront"></div>
+        <div><img src="matchbox.png" class="matchbox" id="matchbox"> </div> 
+        <div><img src="open matchbox.png" class="openmatchbox" id="openmatchbox"></div> 
 
 
         
-        <script src="" async defer></script>
+        <div class="card" id="tessbox">
+        <div class="expandable">
+            <div class="expandable__title-bar">
+                <span class="expandable__title">Tess's Brutal Take on Service
+                </span>
+                <ion-icon class="expandable__icon"name="chevron-back"></ion-icon>
+            </div>
+
+            <div class="expandable__content-wrapper">
+                <div class="expandable__content">
+                    Rating:⭐️<br><br>I am surprised so see all of the positive reviews of this restaurant. The food was mediocre at best but what really drove the experience home was the atrocious service. My party and I, who had a 7:00 pm reservation, waited until 8:10 pm before receiving our first drink. Our waiter upsold us on drinks which, although allowable and fair, does not give the impression of a quality dining experience.<br><br>We ordered the carbonara which was sour to the point of being inedible. After another 30 minutes we were able to flag someone down to note the problem with the pasta. From there, it took another 30 minutes to get the check, despite not having any more food coming.<br><br>After 2.5 hours seated in this establishment I could not be more disappointed in the neglectful service or the lackluster food. Our server, multiple times, blamed “the fall” and fall crowds for the delay. Perhaps a slow, failing business might better suit him, although this one seems well on the way!<br><br>There are many great italian restaurants in New York City. This is not one of them. Wishing Arthur and Sons all the best on their upwards climb to on-par service and edible food. Hope you all get there one day 🙏🏻🙏🏻🙏🏻
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card" id="sadesbox">
+        <div class="expandable">
+            <div class="expandable__title-bar">
+                <span class="expandable__title">Sade on Customer Service
+                </span>
+                <ion-icon class="expandable__icon"name="chevron-back"></ion-icon>
+            </div>
+
+            <div class="expandable__content-wrapper">
+                <div class="expandable__content">
+                    Rating:⭐️⭐️<br><br>Dine-In, Dinner, $50-100<br><br>The host took forever to serve us, the manger sat in front acted like he didn't see us. We was waiting a while to get our order. We made reservations not friendly and food was overcooked.<br><br>Parking: there is no parking at all.                
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card" id="marksbox">
+        <div class="expandable">
+            <div class="expandable__title-bar">
+                <span class="expandable__title">Mark's Take</span>
+                <ion-icon class="expandable__icon"name="chevron-back"></ion-icon>
+            </div>
+
+            <div class="expandable__content-wrapper">
+                <div class="expandable__content">
+                    Rating:⭐️⭐️<br><br>Key words: Dine-In, Dinner, $50-100<br><br>Massively expensive for the lack of food quality. Clearly reheated rubbery meatballs and barely warm salty pasta. Save your money.                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" id="janesbox">
+        <div class="expandable">
+            <div class="expandable__title-bar">
+                <span class="expandable__title">Jane's on the Fence Stance</span>
+                <ion-icon class="expandable__icon"name="chevron-back"></ion-icon>
+            </div>
+
+            <div class="expandable__content-wrapper">
+                <div class="expandable__content">
+                    Rating:⭐️⭐️⭐️⭐️<br><br>Key Words: Dine-In, Dinner, $50-100<br><br>I’m torn. Food is good (if you’re looking for Italian American with thick pasta and a lot of red sauce). I got the spicy seafood pasta. Great ingredients. But it’s just a lot. Literally you take multiple boxes home kind of a lot. So def not a place to grab dinner if you’re going out after.<br><br>Service - everyone was nice. But not special. Everything was very adequately transactional.<br><br>Drinks weren’t very good. I got an Appletini and the flavor was so artificial.<br><br>But again, if you’re looking for a big red sauce meal with thick pasta, you’re in for a treat.                
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+
+    <div class="card" id="johnsbox">
+        <div class="expandable">
+            <div class="expandable__title-bar">
+                <span class="expandable__title">John's Thoughts on Hype
+                </span>
+                <ion-icon class="expandable__icon"name="chevron-back"></ion-icon>
+            </div>
+
+            <div class="expandable__content-wrapper">
+                <div class="expandable__content">
+                    Rating:⭐️⭐️<br><br>Key words: Dine-In, Dinner, $50-100<br><br>Massively expensive for the lack of food quality. Clearly reheated rubbery meatballs and barely warm salty pasta. Save your money.                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" id="alexsbox">
+        <div class="expandable">
+            <div class="expandable__title-bar">
+                <span class="expandable__title">Alex's Amazing Experience
+                </span>
+                <ion-icon class="expandable__icon"name="chevron-back"></ion-icon>
+            </div>
+
+            <div class="expandable__content-wrapper">
+                <div class="expandable__content">
+                    Rating:⭐️⭐️⭐️⭐️⭐️<br><br>Key Words: Dinner, $50-100<br><br>Amazing Experience at Arthur & Sons!<br><br>Arthur & Sons exceeded all our expectations with their incredible food and warm atmosphere. We started with the Caesar Salad, which was fresh, crisp, and perfectly dressed — an excellent start to the meal. The Artichoke Picatta was a delightful surprise, with its bright, tangy flavor and tender artichokes that melted in our mouths.<br><br>The highlight of the night was the Spicy Rigatoni — the sauce had just the right amount of heat, and the pasta was cooked to perfection. We also couldn’t get enough of the Clams Oreganata, which were perfectly seasoned with a delicious breadcrumb topping. To round it all off, we enjoyed the Chicken A La Vesuvio, which was juicy, flavorful, and an absolute must-try.<br><br></b>The service was attentive and friendly, making the whole experience even better. We’ll definitely be back to Arthur & Sons soon!                </div>
+            </div>
+        </div>
+    </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
     </body>
+    <script src="index.js" async defer></script>
 </html>
