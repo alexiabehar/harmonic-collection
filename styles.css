@@ -9,7 +9,7 @@ body{
 
 .imgtitleofplace{
     position: relative;
-    width: 60%;
+    width: 75%;
     height: auto;
     margin-top: 0%;
     margin-left: 0%;
@@ -43,6 +43,18 @@ body{
     }
  }
 
+ .natsonbank-card{
+    position: relative;
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 260px;
+    animation: moving 11s linear infinite;
+    animation-delay: -7s;
+
+    &:hover{
+        animation-play-state: paused;
+    }
+ }
 
 
  .cafecluny-card{
@@ -86,3 +98,37 @@ body{
     }
 
  }
+
+ @media screen and (max-width: 425px){
+    .imgtitleofplace{
+       width: 450px;
+    }
+    #arthursons-card{
+        width: 150px;
+    }
+    #natsonbank-card{
+        width: 135px;
+    }
+    #cafecluny-card{
+        width: 150px;
+    }
+    #felice-card{
+        width: 170px;
+    }#momofuku-card{
+        width: 150px;
+    }
+    
+
+    @keyframes moving{
+
+        0%{
+            left: -150px; top: 0%;
+        }
+    
+        100%{
+            left: 99%; top: 0%;
+        }
+     }
+   
+  }
+ 
