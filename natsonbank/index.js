@@ -73,8 +73,8 @@ $(function() {
 } );
 
 $(function() {
-  $("#card").draggable();
-  $( "#card" ).on( "mousedown", function() {
+  $("#cardimage").draggable();
+  $( "#cardimage" ).on( "mousedown", function() {
     currentZIndex +=2
     $(this).css("z-index", currentZIndex);
   } );
