@@ -21,11 +21,10 @@ body{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 15px;
+    font-size: 10px;
     right: 10px;
-    top: 95vh;
+    top: 96.5vh;
     position: fixed; 
-    z-index: 100;
  }
 
 
@@ -34,9 +33,9 @@ body{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 15px;
+    font-size: 10px;
     left: 10px;
-    top: 95vh;
+    top: 96.5vh;
     position: fixed; 
  }
 
@@ -51,7 +50,6 @@ body{
     100%{
         left: 99%; top: 0%;
     }
-    
  }
 
  .arthursons-card{
@@ -125,7 +123,7 @@ body{
 
  @media screen and (max-width: 425px){
     .imgtitleofplace{
-       width: 350px;
+       width: 420px;
     }
     #arthursons-card{
         width: 150px;
@@ -142,22 +140,19 @@ body{
         width: 150px;
     }
     .name{
-        font-size: 6px;
-        left: 5px;
-        top: 97.5vh;
+        font-size: 10px;
+        right: 5px;
+        top: 96vh;
         position: fixed;
-     }
      }
     
      .date{
-        font-size: 6px;
+        font-size: 10px;
         left: 5px;
         top: 96vh;
         position: fixed;
      }
     
-    
-
 
     @keyframes moving{
 
@@ -170,4 +165,5 @@ body{
         }
      }
    
+  }
  
