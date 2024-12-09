@@ -16,7 +16,30 @@ body{
     filter: invert(100%);
  }
 
- 
+ .name{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+    right: 10px;
+    top: 95vh;
+    position: fixed; 
+    z-index: 100;
+ }
+
+
+ .date{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+    left: 10px;
+    top: 95vh;
+    position: fixed; 
+ }
+
 
 
  @keyframes moving{
@@ -28,6 +51,7 @@ body{
     100%{
         left: 99%; top: 0%;
     }
+    
  }
 
  .arthursons-card{
@@ -101,7 +125,7 @@ body{
 
  @media screen and (max-width: 425px){
     .imgtitleofplace{
-       width: 450px;
+       width: 350px;
     }
     #arthursons-card{
         width: 150px;
@@ -117,7 +141,23 @@ body{
     }#momofuku-card{
         width: 150px;
     }
+    .name{
+        font-size: 6px;
+        left: 5px;
+        top: 97.5vh;
+        position: fixed;
+     }
+     }
     
+     .date{
+        font-size: 6px;
+        left: 5px;
+        top: 96vh;
+        position: fixed;
+     }
+    
+    
+
 
     @keyframes moving{
 
